@@ -1,0 +1,17 @@
+mixin links
+	link(rel="stylesheet", href="main.css")
+mixin logo
+	|
+	|
+	a(href="#", class="logo-link")
+		img(src="img/.*", alt="Логотип", width="", height="", class="logo-img")
+mixin contacts
+	.contacts
+		address.postal
+		button.button-tel
+			a(href="tel:+")
+mixin nav
+	nav.nav-header
+		each val in [1, 2, 3, 4, 5]
+			li.nav-header-item
+				a(href="#")=val

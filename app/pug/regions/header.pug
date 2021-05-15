@@ -1,0 +1,20 @@
+include ../includes/variables-regions.pug
+include ../includes/mixins.pug
+
+header.header-page
+	if container
+		.container
+			if innerHeader 
+				.inner-header
+			if innerTop
+				.inner-top
+				+logo
+				+contacts
+			if innerMiddle
+				.inner-middle
+			if innerBottom
+				.inner-bottom
+				+nav
+
+
+
