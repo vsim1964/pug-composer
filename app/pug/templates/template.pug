@@ -1,0 +1,15 @@
+block variables
+	include ../includes/variables.pug
+
+doctype html
+html
+	head(lang=lang)
+		block metatags
+		title=site+page
+		block links
+		block fonts
+		block scripts
+	body
+		header
+		main
+		footer
