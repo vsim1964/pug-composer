@@ -1,29 +1,31 @@
-<!DOCTYPE html>
-<html>
+
+<includes/>
+<variables-head class="pug"></variables-head><!DOCTYPE html>
+<html>(lang=lang)
   <head>
     <title>org.ruHome</title>
   </head>
   <body>
-    <header class="header-page">
+    <header class="main-header">
       <div class="container">
         <div class="inner-top"></div>
             
             <a class="logo-link" href="#"><img class="logo-img" src="img/.*" alt="Логотип" width="" height=""></a>
             <div class="contacts">
-              <address class="postal"></address>
-              <button class="button-tel"><a href="tel:+"></a></button>
+              <address class="main-header-contacts-postal"></address>
+              <form action="#">
+                <button class="main-header-contacts-button"></button>
+              </form>
             </div>
         <div class="inner-bottom"></div>
-            <nav class="nav-header">
-              <li class="nav-header-item"><a href="#">1</a></li>
-              <li class="nav-header-item"><a href="#">2</a></li>
-              <li class="nav-header-item"><a href="#">3</a></li>
-              <li class="nav-header-item"><a href="#">4</a></li>
-              <li class="nav-header-item"><a href="#">5</a></li>
+            <nav class="main-header-nav">
+              <li class="main-header-nav-item"><a class="main-header-nav-link" href="#">1</a></li>
+              <li class="main-header-nav-item"><a class="main-header-nav-link" href="#">2</a></li>
+              <li class="main-header-nav-item"><a class="main-header-nav-link" href="#">3</a></li>
+              <li class="main-header-nav-item"><a class="main-header-nav-link" href="#">4</a></li>
+              <li class="main-header-nav-item"><a class="main-header-nav-link" href="#">5</a></li>
             </nav>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
   </body>
 </html>

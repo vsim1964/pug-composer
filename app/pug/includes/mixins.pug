@@ -5,13 +5,22 @@ mixin logo
 	|
 	a(href="#", class="logo-link")
 		img(src="img/.*", alt="Логотип", width="", height="", class="logo-img")
+mixin nav
+	nav.main-header-nav
+		each val in [1, 2, 3, 4, 5]
+			li.main-header-nav-item
+				a(href="#").main-header-nav-link=val
+mixin logo-nav
+	nav.main-header-nav
+			|
+			|
+			a(href="#", class="logo-link")
+				img(src="img/.*", alt="Логотип", width="", height="", class="logo-img")
+			each val in [1, 2, 3, 4, 5]
+				li.main-header-nav-item
+					a(href="#").main-header-nav-link=val
 mixin contacts
 	.contacts
-		address.postal
-		button.button-tel
-			a(href="tel:+")
-mixin nav
-	nav.nav-header
-		each val in [1, 2, 3, 4, 5]
-			li.nav-header-item
-				a(href="#")=val
+		address.main-header-contacts-postal
+		form(action="#")
+			button.main-header-contacts-button

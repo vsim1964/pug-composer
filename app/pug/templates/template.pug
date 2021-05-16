@@ -1,15 +1,9 @@
 block variables
-	include ../includes/variables-pages.pug
-
+	includes/variables-head.pug
+	
 doctype html
-html
-	head(lang=lang)
-		block metatags
-		title=site+page
-		block links
-		block fonts
-		block scripts
+html (lang=lang)
+	include ../regions/head.pug
 	body
-		include ../regions/header
-		main
-		footer
+		include ../regions/header.pug
+		include ../regions/main.pug
