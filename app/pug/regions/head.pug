@@ -1,6 +1,12 @@
+block variables
+	include ../includes/variables-head.pug
+include ../includes/mixins.pug
+
+doctype html
+html(lang=lang)
 head
 	block metatags
-	title=site+page
+	title=site+' | '+page
 	block links
 	block fonts
 	block scripts
